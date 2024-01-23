@@ -7,11 +7,13 @@ function createGrid(size) {
     column.classList.add('column');
     container.appendChild(column);
     for (let j = 0; j < size; j++){
-        const row = document.createElement('div');
+       const row = document.createElement('div');
         row.classList.add('row');
         column.appendChild(row);
+
+        row.addEventListener('mouseover', (e) => e.target.classList.add('black'))
     }
 }
 }
+createGrid(16);
 
-createGrid(32);

@@ -3,21 +3,25 @@
     padding: 0;
 }
 body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
     background-color: rgb(223, 218, 218);
 
 }
 .container{
-    margin: auto;
     width: 600px;
-    height: 550px;
+    height: 540px;
     display: flex;
+    border: solid grey 1px;
     gap: 1px;
-    background-color: blueviolet;
+    
 }
 .column{
 width: 100%;
 height: 100%;
-background-color: red;
 display: flex;
 flex: 1;
 flex-direction: column;
@@ -25,6 +29,9 @@ gap: 1px;
 }
 .row{
     width: 100%;
-    height: 200px;
-    background-color: green;
+    height: 100%;
+    gap: 1px;
+}
+.black{
+    background-color: black;
 }
